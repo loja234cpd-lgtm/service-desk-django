@@ -7,3 +7,9 @@ class ClientViewSet(ModelViewSet):
     queryset = Client.objects.all()
     serializer_class = ClientSerializer
     permission_classes = [IsAdminUser]
+
+from rest_framework.permissions import IsAuthenticated
+from core.permissions import IsAdmin
+
+permission_classes = [IsAuthenticated, IsAdmin]
+
