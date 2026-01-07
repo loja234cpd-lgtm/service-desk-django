@@ -12,4 +12,3 @@ from rest_framework.permissions import IsAuthenticated
 from core.permissions import IsAdmin
 
 permission_classes = [IsAuthenticated, IsAdmin]
-
